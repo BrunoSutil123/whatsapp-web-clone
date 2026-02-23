@@ -90,8 +90,10 @@ hr{
     border-radius: 7px 0px 0px 0px; 
     border-top: 1px solid rgb(78, 78, 78); 
     border-left: 1px solid rgb(78, 78, 78); 
-    position: absolute; top: 42px; left: 61px; 
-} 
+    position: absolute; 
+    top: 42px; 
+    left: 61px; 
+}
     
 
 
@@ -116,7 +118,7 @@ hr{
     justify-content: space-between;
 
 
-    h1{
+    h2{
         color: white;
         font-size: 23px;
         font-weight: normal;
@@ -179,7 +181,7 @@ hr{
         font-size: 14px;
         font-weight: bold;
         border-radius: 100px;
-        border: 1px solid rgb(78, 78, 78);;
+        border: 1px solid rgb(78, 78, 78);
         color: rgb(160, 160, 160);
         background-color: transparent;
 
@@ -195,9 +197,81 @@ hr{
 .listaContatos {
     flex: 1;
     overflow-y: auto;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
 }
    
 
+.contatoLateral{
+   border-radius: 10px;
+   max-height: 70px;
+   align-items: center;
+   display: flex;
+   margin-bottom: 5px;
+   margin-right: 5px;
+
+   cursor: pointer; /* deixa com cara de clicável */
+   transition: background-color 0.2s ease; /* animação suave */
+}   
+
+.contatoLateral:hover{
+    background-color: rgb(78, 78, 78); /* cor estilo WhatsApp */
+    border-radius: 10px;
+}
+
+
+.infGeral{  
+    display: block;
+    margin: 10px;
+    width: 100%;
+}
+
+
+.fotoContato{
+    margin: 10px;
+    
+    img{
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        object-fit: cover;
+    }
+}
+
+.inf{
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-self: self-start;
+    color: rgb(160, 160, 160);
+    
+
+    h3{
+        font-size: 19px;
+        font-weight: normal;
+
+        align-self: flex-start;
+    }
+
+    span{
+       font-size: 12px;
+       align-self: flex-end;
+    }
+    
+}
+
+.ultmMensagem{
+    display: flex;
+    margin: 3px;
+    align-items: center;
+    p{  
+        margin-left: 10px;
+        color: rgb(160, 160, 160);
+        text-align: center;
+    }
+}
 
 
 
@@ -219,14 +293,72 @@ hr{
 .tituloChat {
     height: 60px;
     background-color: rgb(27, 27, 27);
-    border-bottom: 1px solid white;
 }
+
+
+
+
+
 
 .areaChat {
     flex: 1;
     overflow-y: auto;
     padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
 }
+
+.mensagem {
+    position: relative;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+
+}
+    
+.mensagemRecebida {
+    background-color: #202c33;
+    border-radius: 10px;
+    color: white;
+
+    max-width: 50%;
+    align-self: flex-start;
+
+    margin: 10px 0px;
+    padding: 5px;
+}
+
+
+.mensagemEnviada {
+    background-color: #005c4b;
+    border-radius: 10px;
+    color: white;
+
+    max-width: 50%;
+    align-self: flex-end;
+
+    margin: 10px 0px;
+    padding: 5px;
+}
+
+.hora {
+    display: block;
+    font-size: 11px;
+    margin-top: 5px;
+    text-align: right;
+    opacity: 0.7;
+}
+
+
+
+
+
+
+
+
+
+
 
 .espacoDigitar {
     height: 70px;
