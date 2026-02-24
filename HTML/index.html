@@ -57,29 +57,38 @@
 
     <main class="caixa2"> 
         <section class="conversas"> 
+
             <article class="conversasOptions"> 
                 <h2>Conversas</h2> 
                 <picture>
-                    <a href="#nova_conversa"><img src="/img/imgNovaConversa.png" alt="ícone de nova conversa"></a> 
-                    <a href="#mais_opcoes"><img src="/img/imgMaisOpcoes.png" alt="ícone de mais opções"></a> 
+                    <div class="styleOptions">
+                        <a href="#nova_conversa"><img src="/img/imgNovaConversa.png" alt="ícone de nova conversa"></a> 
+                    </div>
+                    <div class="styleOptions2">
+                        <a href="#mais_opcoes"><img src="/img/imgMaisOpcoes.png" alt="ícone de mais opções"></a> 
+                    </div>
                 </picture>
             </article> 
             
 
+
+
             <article class="conversasBusca">
-                <id class="barraBusca"> 
+                <div class="barraBusca"> 
                     <label for="barra">
                         <img src="/img/imgLupa.png" alt="ícone lupa">
                         <input type="text" id="barra" placeholder="Pesquisar ou começar uma nova conversa">
                     </label>
-                </id>
+                </div>
 
-                <id class="filtro">
+
+
+                <div class="filtro">
                     <a href="#todos"><button>Todos</button></a>
                     <a href="#naoLidas"><button>Não idas</button></a>
                     <a href="#favoritas"><button>Favoritas</button></a>
                     <a href="#grupos"><button>Grupos</button></a>
-                </id>
+                </div>
             </article> 
             
 
@@ -247,9 +256,26 @@
 
 
         <section class="chat">
-            <article class="tituloChat">
 
+            <article class="tituloChat">
+                <figure class="imagemUsuario">
+                    <img src="/img/imgUsuario.jpg" alt="imagem usuario">
+                </figure>
+                <div class="infUsuario">
+                    <h4>Grande amigo😜</h4>
+                    <p>visto por último hoje às 17:00</p>
+                </div>
+                <div class="optionsUsuario">
+                    <div class="ligar">
+                        <img src="/img/imgCamera.png" alt="ícone de camera para ligação de vídeo">
+                        <p>Ligar</p>
+                    </div>
+                    <a href="#Pesquisar"><img src="/img/imgLupa.png" alt="ícone lupa"></a>
+                    <a href="#MaisOpcoes"><img src="/img/imgMaisOpcoes.png" alt="ícone de mais opções"></a>
+                </div>
             </article>
+
+
 
             <article class="areaChat">
 
@@ -309,7 +335,7 @@
                 </div>
 
                 <div class="mensagem mensagemEnviada">
-                    Uooooooouuuu, caramba, está super lindo, e realmente parece um clone mesmo, nem parece que o bruno começou a estudar recentemente né? que evolução, caraca, me impressionei, ele deve estar super feliz com o progresso desse projeto né.
+                    Uooooooouuuu, caramba, está super lindo, e realmente parece um clone mesmo, nem parece que o Bruno começou a estudar recentemente né? que evolução, caraca, me impressionei, ele deve estar super feliz com o progresso desse projeto né.
                     <span class="hora">11:40</span>
                 </div>
 
@@ -341,9 +367,22 @@
             </article>
             
 
-            <div class="espacoDigitar">
-                <!-- input aqui -->
-            </div>
+
+            <article class="espacoDigitar">
+                <id class="barraDigitar">
+                    <label class="barra">
+                        <div class="iconMore"><img src="/img/img+.png" alt="ícone do símbolo mais do WhatsApp"></div>
+                        <div class="sticker"><img src="/img/imgSticker.png" alt="ícone de figurinha do WhatsApp"></div>
+                        <input type="text" id="barra" placeholder="Pesquisar ou começar uma nova conversa">
+
+                        <div class="mic"><img src="/img/imgMic.png" alt="ícone microfone do WhatsApp"></div>
+                        
+                    </label>
+                </id>
+            </article>
+
+
+
         </section>
     </main>
 </body>

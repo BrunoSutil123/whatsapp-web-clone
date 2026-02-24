@@ -11,7 +11,7 @@ hr{
 .caixa1{    
     background-color: rgb(40, 40, 40);
     width: 100%;
-    height: 732px;
+    height: 100vh;
     position: fixed;
 }
 
@@ -38,14 +38,30 @@ hr{
 .navegacao{
     position: fixed;
     top: 45px;
-    left: 20px;
+    left: 10px;
+
+    
 }
 
 .navegacao a{
-    display: block;
-    margin-bottom: 15px;
-    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 3px 0;
+
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
 }
+
+.navegacao a:hover{
+    background-color: rgb(51, 51, 51);
+    border-radius: 100px;
+}
+
+
 
 .navegacao img{
     width: 25px;
@@ -116,80 +132,133 @@ hr{
     display: flex;
     position: relative;
     justify-content: space-between;
-
-
-    h2{
-        color: white;
-        font-size: 23px;
-        font-weight: normal;
-        font-family: Arial, Helvetica, sans-serif;
-
-    }
-
-    img{
-        width: 25px;
-        height: 25px;
-        object-fit: cover;
-        margin: 0px 10px;
-
-    }
 }
+
+.conversasOptions h2{
+    color: white;
+    font-size: 23px;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.conversasOptions img{
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+    margin: 0px 10px;
+
+}
+
+.conversasOptions picture{
+    display: flex;
+}
+
+    
+
+    
+
+
+
+.styleOptions{
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.styleOptions2{
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.styleOptions:hover{
+    background-color: rgb(78, 78, 78);
+    border-radius: 100px;
+}
+
+.styleOptions2:hover{
+    background-color: rgb(78, 78, 78);
+    border-radius: 100px;
+}
+
 
 
 .barraBusca{
     display: block;
     margin: 10px 0px;
+}
 
-    label{
-        display: flex;
-        align-items: center;
+.barraBusca label{
+    display: flex;
+    align-items: center;
         
-        width: 100%;
-        border-radius: 100px;
-        height: 35px;
-        padding: 0px 15px;
-        background-color: rgb(67, 67, 67);
-    }
+    width: 100%;
+    border-radius: 100px;
+    height: 35px;
+    padding: 0px 15px;
+    background-color: rgb(67, 67, 67);
+}
 
-    img{
-        width: 25px;
-        height: 25px;
-        object-fit: cover;
-    }
+.barraBusca img{
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+}
 
-    input{
-        color: white;
-        flex: 1;
-        border: none;
+.barraBusca input{
+    color: white;
+    flex: 1;
+    border: none;
         
-        margin-left: 10px;
-        background-color: transparent;
-        outline: none;  
-
-    }
-
-    input::placeholder{
-        color: rgb(160, 160, 160);
-        font-size:  15px;
-    }
-
+    margin-left: 10px;
+    background-color: transparent;
+    outline: none;  
 
 }
 
-.filtro{
-    button{
-        font-size: 14px;
-        font-weight: bold;
-        border-radius: 100px;
-        border: 1px solid rgb(78, 78, 78);
-        color: rgb(160, 160, 160);
-        background-color: transparent;
-
-        padding: 7px 10px;
-        margin: 0px 2px 10px;
-
-    }
+.barraBusca input::placeholder{
+    color: rgb(160, 160, 160);
+    font-size:  15px;
 }
+
+
+
+
+
+.filtro button{
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 100px;
+    border: 1px solid rgb(78, 78, 78);
+    color: rgb(160, 160, 160);
+    background-color: transparent;
+
+    padding: 7px 10px;
+    margin: 0px 2px 10px;
+
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    
+}
+
+.filtro button:hover{
+    background-color: rgb(78, 78, 78);
+    border-radius: 100px;
+}
+
 
 
 
@@ -212,15 +281,18 @@ hr{
    margin-bottom: 5px;
    margin-right: 5px;
 
-   cursor: pointer; /* deixa com cara de clicável */
-   transition: background-color 0.2s ease; /* animação suave */
+   cursor: pointer; 
+   transition: background-color 0.2s ease; 
 }   
 
 .contatoLateral:hover{
-    background-color: rgb(78, 78, 78); /* cor estilo WhatsApp */
+    background-color: rgb(78, 78, 78);
     border-radius: 10px;
 }
 
+.miniHora{
+    color: rgb(160, 160, 160);
+}
 
 .infGeral{  
     display: block;
@@ -231,14 +303,15 @@ hr{
 
 .fotoContato{
     margin: 10px;
-    
-    img{
-        width: 40px;
-        height: 40px;
-        border-radius: 20px;
-        object-fit: cover;
-    }
 }
+    
+.fotoContato img{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
 
 .inf{
     font-family: Arial, sans-serif;
@@ -246,32 +319,40 @@ hr{
     justify-content: space-between;
     align-self: self-start;
     color: rgb(160, 160, 160);
-    
+} 
 
-    h3{
-        font-size: 19px;
-        font-weight: normal;
+.inf h3{
+    color: white;
+    font-size: 19px;
+    font-weight: normal;
 
-        align-self: flex-start;
-    }
-
-    span{
-       font-size: 12px;
-       align-self: flex-end;
-    }
-    
+    align-self: flex-start;
 }
+
+.inf span{
+    font-size: 12px;
+    align-self: flex-end;
+}
+    
+
 
 .ultmMensagem{
     display: flex;
     margin: 3px;
     align-items: center;
-    p{  
-        margin-left: 10px;
-        color: rgb(160, 160, 160);
-        text-align: center;
-    }
 }
+
+.ultmMensagem p{  
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-left: 10px;
+    color: rgb(160, 160, 160);
+    text-align: center;
+}
+
+
+
+
 
 
 
@@ -289,15 +370,6 @@ hr{
     flex-direction: column;
     background-image: url("https://e1.pxfuel.com/desktop-wallpaper/461/478/desktop-wallpaper-whatsapp-dark-whatsapp-chat.jpg");
 }
-
-.tituloChat {
-    height: 60px;
-    background-color: rgb(27, 27, 27);
-}
-
-
-
-
 
 
 .areaChat {
@@ -360,7 +432,184 @@ hr{
 
 
 
+
+.tituloChat{
+    height: 60px;
+    background-color: rgb(27, 27, 27);
+
+    display: flex;
+    padding: 15px;
+    align-items: center;
+
+    width: 100%;
+}
+
+
+.imagemUsuario {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.imagemUsuario img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+
+.infUsuario {
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+.infUsuario h4 {
+    color: white;
+    font-size: 17px;
+    margin-bottom: 1px;
+}
+
+.infUsuario p {
+    color: rgb(160, 160, 160);
+    font-size: 12px;
+}
+
+.optionsUsuario {
+    margin-left: auto;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.optionsUsuario a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.optionsUsuario a:hover{
+    background-color: rgb(78, 78, 78);
+    border-radius: 100px;
+}
+
+
+
+.optionsUsuario img{
+    height: 22px;
+    width: 22px;
+    margin-right: 10px;
+    
+}
+
+
+.ligar{
+    align-items: center;
+    display: flex;
+    border: 1px solid rgb(160, 160, 160);
+    border-radius: 100px;
+    padding: 7px 20px;
+    margin-right: 20px;
+
+    cursor: pointer;
+    transition: background-color 0.2s ease; 
+}
+
+.ligar p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(160, 160, 160);
+}
+
+
+.ligar:hover{
+    background-color: rgb(78, 78, 78);
+    border-radius: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .espacoDigitar {
     height: 70px;
-    border-top: 1px solid white;
 }
+
+.barraDigitar{
+    display: block;
+}
+.barraDigitar label{
+    display: flex;
+    align-items: center;
+        
+    width: auto;
+    border-radius: 100px;
+    height: 50px;
+    padding: 0px 15px;
+    margin: 0px 10px;
+    background-color: rgb(40, 40, 40);
+}
+
+.barraDigitar img{
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+}
+
+.barraDigitar input{
+    color: white;
+    flex: 1;
+    border: none;
+        
+    margin-left: 10px;
+    background-color: transparent;
+    outline: none;  
+
+}
+
+.barraDigitar input::placeholder{
+    color: rgb(160, 160, 160);
+    font-size:  15px;
+}
+
+    
+
+.mic,
+.iconMore,
+.sticker {
+    height: 40px;
+    width: 40px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+
+
+.mic:hover,
+.iconMore:hover,
+.sticker:hover {
+    background-color: rgb(78, 78, 78);
+    border-radius: 100px;
+}
+
+
+
