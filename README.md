@@ -23,14 +23,13 @@ O objetivo principal é praticar fundamentos de front-end e aprimorar habilidade
 
 - Trabalhar com layout fixo
 - Criar sidebar fixa
-- Implementar botão flutuante
-- Utilizar bordas, sombras e arredondamentos
+- Utilizar bordas e arredondamentos
 - Melhorar organização de código
 
 
 ##  Status do projeto
 
-🚧 Em desenvolvimento
+Finalizado!!
 
 ---
 
